@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical Timeline</title>
+    <style>
+        .container{
+            padding:10px 40px;
+        }
+        .container ul{
+            list-style: none;
+            position: relative;
+            padding: 0;
+        }
+
+        .container ul:before{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height:100%;
+            top:0;
+            left:0;
+            background-color: #ddd;
+        }
+
+        .container ul li{
+            padding:20px 20px;
+        }
+        .container ul li div{
+            padding: 5px 10px;
+        }
+        .container ul li.selected{
+            color: tomato;
+        }
+        .container ul li span{
+            color: #aaaaaa;
+            position: absolute;
+            left:-20px;
+            font-size:12px;
+            background-color: white;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li class="selected">
+            <span>0 min</span>
+            <div>
+                First item
+            </div>
+        </li>
+
+        <li>
+            <span>0 min</span>
+            <div>
+                Second item
+            </div>
+        </li>
+
+        <li>
+            <span>0 min</span>
+            <div>
+                Third item
+            </div>
+        </li>
+
+    </ul>
+</div>
+</body>
+</html>
